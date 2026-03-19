@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="../css/style.css"/>
+</head>
+<body>
+  <div class="index">
+    <div class="container-fluid d-flex p-0">
+    
+    <!-- Sidebar -->
+    <div class="sidebar d-flex flex-column align-items-center pt-4">
+      <button class="btn icon-btn mb-3">🏠</button>
+      <button class="btn icon-btn mb-3">🍽️</button>
+      <button class="btn icon-btn mb-3">🔔</button>
+      <button class="btn icon-btn mb-3">⚙️</button>
+    </div>
+
+    <!-- Main -->
+    <div class="main-content flex-grow-1">
+      <h3>Restaurant POS</h3>
+      <p class="text-secondary">Sunday, 26 March 2023</p>
+
+      <!-- Category Tabs -->
+      <div class="container mt-5">
+        <div class="filter-right-group">
+        <div class="filter-bar  ">
+          
+        <div class="d-flex align-items-center">
+            <!-- <div class="filter-label">Explore Menu</div> -->
+            <div class="category-tabs filter-right-group">
+            <button class="category-tab">All</button>
+            <button class="category-tab active">Main Course <span>24</span></button>
+            <button class="category-tab">Soup</button>
+            <button class="category-tab">Salads</button>
+            <button class="category-tab">Drinks</button>
+            <button class="category-tab">Appetizer</button>
+            <button class="category-tab">Dessert</button>
+            </div>
+        </div>
+        <div class="filter-actions">
+            <button class="icon-button">🔍</button>
+            <button class="icon-button">⚙️</button>
+        </div>
+        </div>
+        </div>
+    </div>
+
+      <!-- Dishes -->
+
+      <div class="container">
+  <div class="row" id="dish-list">
+    <!-- JS Appended Cards Here -->
+  </div>
+</div>
+
+
+      <!-- <div class="dish-card" role="group" aria-label="Tuna Boiled Eggs dish card">
+  <div class="image-wrapper">
+    <img src="https://placehold.co/100x100/png?text=Tuna+Boiled+Eggs" alt="Overhead view of a white plate with tuna boiled eggs garnished with herbs on dark table setting" />
+  </div>
+  <div class="content">
+    <span class="subtitle">Main Course</span>
+    <div class="title-price">
+      <h2 class="title">Tuna Boiled Eggs</h2>
+      <span class="price">$12.50</span>
+    </div>
+    <div class="controls">
+      <div class="qty-control" aria-label="Quantity controls">
+        <button class="qty-btn" aria-label="Decrease quantity" id="decreaseBtn">−</button>
+        <span class="qty-number" id="quantity" aria-live="polite" aria-atomic="true">0</span>
+        <button class="qty-btn" aria-label="Increase quantity" id="increaseBtn">+</button>
+      </div>
+      <button class="add-btn" aria-label="Add to cart">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path d="M19 11h-6V5h-2v6H5v2h6v6h2v-6h6z" />
+        </svg>
+      </button>
+    </div>
+  </div>
+</div> -->
+
+
+        <!-- Dishes injected by JS -->
+      </div>
+    </div>
+
+    <!-- Cart -->
+    <div class="cart">
+      <h5>Orders #84621</h5>
+      <div class=" mb-3 btn-category">
+        <button class="btn btn-category-tab active">Dine In</button>
+        <button class="btn btn-category-tab">To Go</button>
+        <button class="btn btn-category-tab">Delivery</button>
+      </div>
+      
+      <div id="order-items">
+        <!-- Order items will be added here -->
+      </div>
+
+      <hr class="text-secondary">
+      <p>Discount: <span class="float-end">Rs.0.0</span></p>
+      <p>Sub Total: <span class="float-end" id="subtotal">Rs.0.00</span></p>
+
+      <button class="btn btn-submit mt-3">Continue to Payment</button>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+  <script src="../js/script.js"></script>
+</body>
+</html>
